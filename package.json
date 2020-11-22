@@ -2,9 +2,9 @@
   "name": "mediagrabber",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss public/css/tailwind.css -o public/css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.8",
+    "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.0.1"
   }
 }

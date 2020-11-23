@@ -1,32 +1,32 @@
 {
-  "name": "mediagrabber",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "build": "postcss public/css/tailwind.css -o public/css/styles.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ousunny/MediaGrabber.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ousunny/MediaGrabber/issues"
-  },
-  "homepage": "https://github.com/ousunny/MediaGrabber#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "fluent-ffmpeg": "^2.1.2",
-    "ytdl-core": "^4.0.5"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.0.2",
-    "postcss": "^8.1.8",
-    "postcss-cli": "^8.3.0",
-    "tailwindcss": "^2.0.1"
-  }
+    "name": "mediagrabber",
+    "version": "1.0.1",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "build": "postcss public/css/tailwind.css -o public/css/styles.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ousunny/MediaGrabber.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ousunny/MediaGrabber/issues"
+    },
+    "homepage": "https://github.com/ousunny/MediaGrabber#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "fluent-ffmpeg": "^2.1.2",
+        "ytdl-core": "^4.0.5"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.0.2",
+        "postcss": "^8.1.8",
+        "postcss-cli": "^8.3.0",
+        "tailwindcss": "^2.0.1"
+    }
 }

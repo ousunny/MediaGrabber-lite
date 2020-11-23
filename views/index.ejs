@@ -1,3 +1,37 @@
 <%- include ("./partials/header") %>
 
+<div class="flex items-center justify-center w-full flex-col pt-10">
+    <h1 class="font-extrabold text-red-500 text-5xl">MediaGrabber</h1>
+    <form
+        action="/download"
+        method="GET"
+        class="flex items-center justify-center w-full flex-col"
+    >
+        <div class="flex flex-col w-4/5 my-8 sm:my-12 sm:w-1/2 sm:flex-row">
+            <input
+                type="text"
+                name="url"
+                id="download-input"
+                placeholder="YouTube link"
+                class="w-full outline-none rounded-md px-4 py-2 border mb-4 border-gray-500 focus:border-red-500 sm:mb-0 sm:border-r-0 sm:rounded-tr-none sm:rounded-br-none"
+            />
+
+            <select
+                name="type"
+                id="download-type"
+                class="rounded-md px-4 py-2 border border-gray-500 sm:rounded-tl-none sm:rounded-bl-none"
+            >
+                <option value="mp3">MP3</option>
+                <option value="video">Video</option>
+            </select>
+        </div>
+        <button
+            type="submit"
+            class="rounded-md px-4 py-2 bg-red-500 text-white"
+        >
+            Download
+        </button>
+    </form>
+</div>
+
 <%- include ("./partials/footer") %>

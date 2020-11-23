@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
+const fs = require('fs');
 
 router.get('/', (req, res) => {
     res.render('index');
@@ -15,7 +16,7 @@ router.get('/download', async (req, res, next) => {
     let title = 'title';
 
     await ytdl.getBasicInfo(url, { format: 'mp4' }).then((info) => {
-        title = encodeURI(info.videoDetails.title);
+        title = encodeURI(info.videoDetails.title.replace('/', ' '));
     });
 
     if (type === 'video') {

@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
-const fs = require('fs');
 
 router.get('/', (req, res) => {
     res.render('index');
